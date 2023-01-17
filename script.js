@@ -1,4 +1,5 @@
 //your code here
+function countWord() {
 var text = document.getElementById("evaluatedText").value;
 var numWords = 0;
           
@@ -8,12 +9,14 @@ var numWords = 0;
                 var currentCharacter = text[i];
           
                 // Check if the character is a space
-                if (currentCharacter == " ") {
-                    numWords += 1;
-                }
+                // if (currentCharacter == " ") {
+                //     numWords += 1;
+                // }
+				numWords += 1;
             }
-numWords += 1;
+
           
             // Display it as output
             document.getElementById("letterCount")
                 .innerHTML = numWords;
+}
